@@ -1,0 +1,96 @@
+REM Open Terminal (ALT + F2, type qterminal)
+DELAY 2000
+ALT F2
+DELAY 2000
+STRING qterminal
+DELAY 2000
+ENTER
+DELAY 3000
+
+REM Navigate to the home directory (you can modify this path)
+STRING cd ~
+ENTER
+DELAY 2000
+
+REM Clone the GitHub repository (replace the URL with your desired repo)
+STRING git clone https://github.com/hexway/apple_bleee.git
+ENTER
+DELAY 60000  # This might take a while depending on your internet speed
+
+REM Run the specified commands
+STRING sudo apt update
+ENTER
+DELAY 30000  # This might take a while depending on your internet speed
+STRING sudo apt install -y bluez libpcap-dev libnl-3-dev libnl-genl-3-dev libnl-route-3-dev cmake libbluetooth-dev
+ENTER
+DELAY 60000  # This might take a while depending on your internet speed
+STRING sudo pip3 install -r requirements.txt
+ENTER
+DELAY 30000 
+STRING git clone https://github.com/seemoo-lab/owl.git && cd ./owl && git submodule update --init && mkdir build && cd build && cmake .. && make && sudo make install && cd ../..
+ENTER
+DELAY 2000
+STRING cd apple_bleee
+DELAY 2000
+STRING sudo python3 ble_read_state.py
+ENTER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
