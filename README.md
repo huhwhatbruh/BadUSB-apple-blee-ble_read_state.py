@@ -6,6 +6,8 @@ I want to reiterate that I did not make any of the scripts besides the the Ducky
 
 If you want to customize the script to run on another Linux Distrobution you would want to change the second (STRING qterminal) to what ever terminal your linux distrobution uses for example (STRING Gnome_Terminal) 
 
+The Rubber Ducky script is inside of the .txt file
+
 this is just for educational purposes and I wanted to play around with Rubber Ducky 1.0 on my Flipper Zero.
 
 again the actual code was written by hexway: https://github.com/hexway/apple_bleee
